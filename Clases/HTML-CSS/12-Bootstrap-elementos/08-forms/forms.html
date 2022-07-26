@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-4">
+        <form>
+            <div class="mb-3">
+                <label for="nombre">Name</label>
+                <input id="nombre" class="form-control" type="text" placeholder="your name">
+                <div class="form-text">Introduce your name</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="surname">Surname</label>
+                <input id="surname" class="form-control-plaintext" type="text" value="Leiva">
+                <div class="form-text">Introduce your surname</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="leiva.gustavo@hotmail.com.ar" readonly>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            
+            <div class="mb-3">
+                <input type="checkbox" class="form-check-input" id="check-mayor-edad">
+                <label class="form-check-label" for="check-mayor-edad">¿Eres mayor de edad?</label>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div class="mb-3" >
+                <label for="formFile" class="form-label">Default file input example</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+            <div class="mb-3">
+                <label for="exampleColorInput" class="form-label">Color picker</label>
+                <input type="color" class="form-control form-control-color" id="exampleColorInput">
+            </div>
+            <div class="mb-3">
+                <label for="exampleDataList" class="form-label"> Select your city </label>
+                <input 
+                class="form-control" 
+                list="datalistOptions" 
+                id="exampleDataList" 
+                placeholder="Type to search..."/>
+                <datalist id="datalistOptions">
+                    <option value="Buenos Aires"/>
+                    <option value="Cordoba"/>
+                    <option value="Rosario"/>
+                    <option value="Salta"/>
+                </datalist>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          
+          
+        
+        </form>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+crossorigin="anonymous"></script>
+</html>

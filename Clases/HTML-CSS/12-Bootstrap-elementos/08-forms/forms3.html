@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms-2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container pt-4">
+      <form action="">
+        <label for="range">Selecciona un rango</label>
+        <input
+          id="range"
+          type="range"
+          class="form-range"
+          value="5"
+          min="0"
+          max="10"
+          step="0.1"
+        />
+
+
+
+
+
+
+        <div class="input-group mt-4">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" />
+        </div>
+      
+        <div class="input-group mt-4 w-50">
+            <label for="email">Introduce tu Email</label>
+            <div class="input-group col-md-6">
+              <input type="text" class="form-control" id="email"/>
+              <span class="input-group-text">@gmail.com</span>
+            </div>
+        </div>
+        <div class="input-group mt-4">
+            <input type="text" placeholder="Haz tu busqueda" class="form-control">
+            <button class="btn btn-outline-secondary">Buscar</button>
+        </div>
+
+        <div class="mt-4">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Elige tu buscador</button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Google</a></li>
+                  <li><a class="dropdown-item" href="#">Yahoo</a></li>
+                  <li><a class="dropdown-item" href="#">Zafari</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+        </div>
+
+        <!-- Floating label-->
+        <!-- El placeholder es necesario, incluirlo aunque no se muestre -->
+        <div class="form-floating mb-3">
+            <input id="nombre" type="text" class="form-control" placeholder="Tu nombre"/>
+            <label for="nombre">Ingresa tu nombre</label>
+        </div>
+      </form>
+    </div>
+
+
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+</html>
