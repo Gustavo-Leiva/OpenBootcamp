@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container py-4">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#modal-ejemplo"
+      >
+        Lanzar modal de demostracion
+      </button>
+      <div class="modal fade" data-bs-backdrop="static" id="modal-ejemplo">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <h4 class="modal-header">Este el header</h4>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                cum obcaecati, odit suscipit est vero, adipisci consequuntur
+                dolor aperiam omnis aliquam dicta debitis eveniet voluptates
+                dolores tenetur quos nostrum magni! Amet neque pariatur possimus
+                aperiam consectetur dolore sint mollitia, perspiciatis culpa
+                ipsa magni, dignissimos eos velit aspernatur, quasi laborum
+                assumenda molestias aliquam vitae iusto. Eligendi omnis
+                temporibus exercitationem! Voluptate, labore! Autem et soluta
+                iste facere distinctio repudiandae, aspernatur laborum unde esse
+                consequatur architecto culpa ad natus animi similique dolorem!
+                Aperiam quam vel alias voluptate facere eligendi ipsam, corrupti
+                error eaque. Odit vel aliquam tempora. Culpa excepturi maiores
+                ea tempora soluta sint cupiditate earum, doloremque
+                necessitatibus qui accusamus nesciunt, similique accusantium
+                ipsa optio! Rerum ipsa fugit ullam soluta temporibus. Quibusdam,
+                ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Veniam repellendus exercitationem similique blanditiis tempora
+                nisi minima asperiores repellat libero quasi, adipisci laborum
+                impedit, excepturi magnam laudantium assumenda rerum quae hic.
+                Exercitationem, corrupti. Illum fugiat eius ipsam libero
+                recusandae? Illum nesciunt culpa laboriosam necessitatibus
+                ducimus dolorem saepe, architecto nisi doloremque provident
+                quisquam praesentium, ipsa aliquid quaerat fugit deleniti minus
+                voluptatum quae. Recusandae omnis fugiat minima. Aut ipsum earum
+                ea quam. Ipsa itaque vel, recusandae et soluta, est rem quidem
+                harum perferendis error saepe possimus minus, quae a quia
+                repudiandae fuga tenetur. Assumenda totam perferendis
+                voluptates. Eligendi voluptatem quaerat rem alias fuga, nesciunt
+                accusamus unde adipisci, explicabo officia obcaecati, aperiam
+                doloremque atque ad quibusdam veniam esse repellendus impedit
+                modi doloribus suscipit tempora? Eligendi ducimus ut quas
+                voluptate quasi aperiam repellat molestiae odit. Aspernatur
+                tenetur eius quaerat nobis similique optio perferendis
+                exercitationem, aperiam placeat laboriosam dolorem quas minima
+                nemo voluptatum porro dolores eligendi? Consequatur quos velit
+                inventore vel ut pariatur placeat sunt officia, autem, vero quod
+                quidem ea quisquam aperiam. Enim, esse dolores architecto
+                necessitatibus culpa tempora illum nemo reiciendis? Amet, vitae
+                minima. Recusandae, dolores deleniti ducimus itaque fugit
+                reiciendis praesentium officia provident quia asperiores
+                eligendi similique magnam laudantium accusantium cum magni eius
+                id ut alias numquam ipsam minus illum quidem culpa. Vitae? Porro
+                laborum facere nobis? Ad modi, officiis saepe, ex perferendis
+                unde fugit nobis in eaque voluptatum, similique amet explicabo
+                minus ipsam nostrum quaerat velit nulla rem aut? Totam,
+                cupiditate impedit! Error aspernatur minus beatae soluta
+                provident, cum voluptate eligendi. Qui ex atque illum
+                accusantium ipsam maxime vitae distinctio, voluptatum optio
+                dolor nisi molestias placeat est dolores? Nihil sint commodi
+                laborum? Consectetur saepe amet nostrum officiis excepturi
+                numquam iste ratione ipsum expedita, aspernatur, maxime veniam
+                eaque tempore quos dolorem dolore quo dolorum voluptatem commodi
+                officia assumenda reiciendis ipsa! Blanditiis, deleniti quaerat.
+              </p>
+              <hr />
+              <p>
+                This
+                <a
+                  href="#"
+                  role="button"
+                  class="btn btn-secondary"
+                  data-bs-toggle="popover"
+                  title="Titulo"
+                  data-bs-content="Contenido del Poopers"
+                  >button</a
+                >
+                triggers a popover on click.
+              </p>
+              <hr />
+              <p>Este es un <a href="#"
+                data-bs-toggle="tooltip" data-bs-placement="right" title="Esto es un tooltip">tooltip</a></p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary">Aceptar</button>
+              <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    const popoverTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="popover"]'
+    );
+    const popoverList = [...popoverTriggerList].map(
+      (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+    );
+  </script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+  </script>
+</html>
